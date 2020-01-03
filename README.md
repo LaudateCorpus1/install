@@ -3,7 +3,7 @@
 ## 安装 Homebrew
 
 ```bash
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/cn/install)"
+/usr/bin/ruby -e "$(curl -fsSL https://gitee.com/topfullstack/install/raw/cn/install)"
 
 ```
 
