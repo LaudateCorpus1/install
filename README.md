@@ -1,21 +1,21 @@
-# Homebrew (un)installer
+# Homebrew 中国镜像安装器
 
-## Install Homebrew
-
-```bash
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
-
-More installation information and options at https://docs.brew.sh/Installation.html.
-
-### Linux and Windows 10 Subsystem for Linux
-
-Install Homebrew on Linux and Windows 10 Subsystem for Linux: https://docs.brew.sh/Linuxbrew.
-
-## Uninstall Homebrew
+## 安装 Homebrew
 
 ```bash
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/cn/install)"
+
 ```
 
-Download the uninstall script and run `./uninstall --help` to view more uninstall options.
+## 设置中国镜像
+
+```bash
+cd "$(brew --repo)"
+git remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git
+cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"
+git remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git
+brew update
+```
+## 官方文档
+
+https://github.com/Homebrew/install
